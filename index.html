@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.svg" >
+    <title>Papillon - Sistema</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,600&display=swap" rel="stylesheet">
+
+    <script type="module" src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h3>Lucro</h3>
+            <h4>R$1.000,00</h4>
+        </div>
+        <div class="button-group">
+            <button id="open-modal-button">Adicionar</button>
+            <button>Tipos</button>
+        </div>
+        <div class="button-group">
+            <button>Custos</button>
+            <button>Instagram</button>
+        </div>
+    </header>
+    <main>
+        <section class="data-displayer">
+            <div>
+                <h3>CPL</h3>
+                <h4>R$0,50</h4>
+            </div>
+            <div>
+                <h3>CPA</h3>
+                <h4>0,80</h4>
+            </div>
+            <div>
+                <h3>CTR</h3>
+                <h4>90%</h4>
+            </div>
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <td>Data</td>
+                    <td>Hora</td>
+                    <td>Tipo</td>
+                    <td>Preço</td>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        
+    </main>
+    <div class="modal-bg">
+        <span class="modal " action="">
+            <label for="type">Tipo do produto</label>
+            <input list="type" required data-type-form>
+            <datalist id="type">
+                <option value="Pulseira">
+                <option value="Anel">
+                <option value="Brinco">
+                <option value="Colar">
+                <option value="Tornozeleira">
+            </datalist>
+
+            <label for="price">Preço</label>
+            <input type="number" step="0.50" placeholder="00.00" required data-price-form>
+            <div>
+                <button class="cancel-button">Cancelar</button>
+                <button class="save-button">Salvar</button>
+            </div>
+        </span>
+    </div>
+</body>
+</html>
